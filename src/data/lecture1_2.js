@@ -5,11 +5,367 @@ export const lecture1_2 = {
 
   revision: {
     sections: [
+      // ── LECTURE 1 ──────────────────────────────────────────────────────────
       {
-        heading: "Content coming soon",
-        content: [
-          "This lecture's study material is being prepared. Check back soon.",
+        type: "keyDefinition",
+        label: "KEY DEFINITION",
+        text: "Dementia is a progressive syndrome causing decline in memory, thinking, behaviour and the ability to carry out daily activities. It is NOT a normal part of ageing.",
+      },
+      {
+        type: "statTable",
+        heading: "Singapore Statistics (WiSE Study 2023 — IMH)",
+        rows: [
+          {
+            label: "1 in 11",
+            value:
+              "Individuals aged 60 and above in Singapore live with dementia",
+          },
+          {
+            label: "1 in 2",
+            value: "Individuals aged 85 and above are diagnosed with dementia",
+          },
+          {
+            label: "74,000",
+            value:
+              "Approximate number of persons living with dementia in Singapore in 2023",
+          },
+          {
+            label: "152,000",
+            value:
+              "Projected number of persons with dementia in Singapore by 2030",
+          },
+          {
+            label: "Aged Society",
+            value:
+              "Singapore reached this status in 2017 (>14% population aged 65+)",
+          },
+          {
+            label: "Super-Aged",
+            value:
+              "Singapore is expected to reach this status by 2026 (>21% aged 65+)",
+          },
+          {
+            label: "WiSE 2013 vs 2023",
+            value:
+              "Prevalence slightly decreased from 10% to 8.8% — a positive trend",
+          },
+          {
+            label: "Undiagnosed",
+            value:
+              "Improved: 70.6% undiagnosed in 2013, reduced to 51.5% in 2023",
+          },
         ],
+      },
+      {
+        type: "bulletList",
+        heading: "Young-Onset Dementia (YOD) — Key Facts",
+        items: [
+          "Defined as dementia diagnosed in individuals under the age of 65",
+          "Strongly linked to stroke and traumatic brain injury (TBI) — different from older adults",
+          "Over 100 cases diagnosed at NNI (National Neuroscience Institute) each year",
+          "~30% of dementia cases at NNI are young-onset; youngest patient recorded was 40 years old",
+          "YOD is more costly: avg ~S$21,391/year vs S$11,356/year for older adults with dementia",
+        ],
+      },
+      {
+        type: "statTable",
+        heading: "Caregiver Impact — Key Numbers to Remember",
+        rows: [
+          {
+            label: "Average caregiver age",
+            value: "62 years old; majority are women",
+          },
+          {
+            label: "Weekly caregiving hours",
+            value: "33 hours per week on average",
+          },
+          {
+            label: "Overwhelmed caregivers",
+            value:
+              "74% report feeling overwhelmed (Milieu & Dementia Singapore, 2023)",
+          },
+          {
+            label: "Caregiver training attended",
+            value: "Only 5% have attended any formal caregiver training",
+          },
+          {
+            label: "Aware of subsidies",
+            value: "Only 38% are aware of subsidies for caregiver courses",
+          },
+          {
+            label: "Eldercare leave",
+            value: "Only 28% of employed caregivers receive eldercare leave",
+          },
+          {
+            label: "Extra cost of dementia care",
+            value:
+              "~40% more expensive than regular day care (Lien Foundation, 2018)",
+          },
+          {
+            label: "Total cost (SG, 2015)",
+            value: "~S$2.8 billion — expected to triple by 2030",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        heading:
+          "Government Response: National Dementia Strategy 2023–2033 (6 Goals)",
+        items: [
+          "Reduce risk through healthier lifestyles and public education",
+          "Improve early detection and diagnosis (including at polyclinic level)",
+          "Strengthen caregiver support — respite care, training, workplace flexibility",
+          "Empower persons with dementia to live meaningfully in the community",
+          "Build dementia-inclusive environments (housing, transport, amenities)",
+          "Enhance research and data capability for evidence-based policy",
+        ],
+      },
+      {
+        type: "statTable",
+        heading: "Key Programmes — Singapore (Must Know)",
+        rows: [
+          {
+            label: "DFC (Dementia-Friendly Communities)",
+            value:
+              "Launched 2016 — trained neighbourhoods; e.g. Yishun, Bedok, Hong Kah North",
+          },
+          {
+            label: "CREST (Community Outreach Teams)",
+            value:
+              "Provides early detection, education and emotional support in heartlands",
+          },
+          {
+            label: "CTG (Caregivers Training Grant)",
+            value: "Subsidises affordable dementia care training for families",
+          },
+          {
+            label: "ElderFund / MediFund",
+            value: "Financial assistance schemes for long-term care costs",
+          },
+          {
+            label: "Pioneer Generation Package",
+            value: "Additional support for pioneering generation seniors",
+          },
+          {
+            label: "Memory Clinics",
+            value:
+              "Established in 16 of 23 polyclinics for community-level dementia diagnosis",
+          },
+          {
+            label: '"Forget Us Not" Campaign',
+            value: "Public awareness campaign to reduce stigma around dementia",
+          },
+        ],
+      },
+      {
+        type: "examTip",
+        label: "EXAM GOLDEN RULE",
+        text: "In any scenario question asking what an HCA should do: SAFETY + DIGNITY + CALM + PATIENT-CENTRED approach is ALWAYS the correct answer. Never restrain, never ignore, never argue, never punish.",
+      },
+
+      // ── LECTURE 2 ──────────────────────────────────────────────────────────
+      {
+        type: "keyDefinition",
+        label: "CORE DEFINITION",
+        text: "Dementia is an UMBRELLA TERM — not a single disease. It describes a group of symptoms caused by disorders affecting the brain, leading to decline in memory, thinking, language, judgement and behaviour. It is NOT a normal part of ageing.",
+      },
+      {
+        type: "comparisonTable",
+        heading: "4 Main Types of Dementia — Quick Comparison",
+        columns: ["Type", "Cause", "Key Feature", "Special Note"],
+        rows: [
+          {
+            col1: "Alzheimer's Disease",
+            col2: "Amyloid plaques & tau tangles",
+            col3: "Memory loss first; gradual onset",
+            col4: "Most common — 60–80% of cases",
+          },
+          {
+            col1: "Vascular Dementia",
+            col2: "Reduced blood flow (stroke/hypertension)",
+            col3: "Sudden onset; stepwise decline",
+            col4: "2nd most common; may be preventable",
+          },
+          {
+            col1: "Lewy Body Dementia",
+            col2: "Lewy body protein deposits",
+            col3: "Visual hallucinations; Parkinson-like symptoms",
+            col4: "Fluctuating alertness; affects both men and women",
+          },
+          {
+            col1: "Frontotemporal (FTD)",
+            col2: "Protein clumps in frontal/temporal lobes",
+            col3: "Personality & behaviour changes FIRST",
+            col4: "More common in under-65s (Pick's disease)",
+          },
+        ],
+      },
+      {
+        type: "twoColumnList",
+        heading: "Reversible vs Irreversible Dementia",
+        columns: [
+          {
+            title: "REVERSIBLE (treatable causes)",
+            items: ["Vitamin B12 deficiency", "Hypothyroidism", "Depression"],
+          },
+          {
+            title: "IRREVERSIBLE (cannot be cured)",
+            items: [
+              "Alzheimer's disease",
+              "Vascular dementia",
+              "Lewy Body dementia",
+              "Frontotemporal dementia",
+            ],
+          },
+        ],
+        note: "Most common dementias are irreversible — treatment only manages symptoms.",
+      },
+      {
+        type: "bulletList",
+        heading: "Symptoms of Dementia — 12 Key Signs",
+        items: [
+          "Memory loss — forgetting recent events, names of loved ones; disrupts daily life",
+          "Difficulty with familiar tasks — cannot prepare food, handle finances, or get dressed independently",
+          "Language problems — cannot find the right words; using wrong words or becoming mute",
+          "Disorientation to time/place — gets lost in familiar places; confused about day, month, year",
+          "Poor judgement — making unsafe decisions; e.g. going out in cold weather without clothes",
+          "Misplacing objects — puts things in wrong places (wallet in oven); blames others for theft",
+          "Mood/personality changes — depression, anxiety, suspicion, irritability",
+          "Withdrawal from social life — stops hobbies, avoids social situations",
+          "Aggression / wandering — common behavioural symptoms requiring careful management",
+          "Apathy — loss of motivation or interest in activities they used to enjoy",
+          "Insomnia / sundowning — confusion or agitation that worsens in the late afternoon/evening",
+          "Increasing dependence — progressively relies on others for all activities of daily living (ADLs)",
+        ],
+      },
+      {
+        type: "comparisonTable",
+        heading: "Normal Ageing vs Dementia — Critical Distinction",
+        columns: ["Normal Ageing (Not Dementia)", "Dementia"],
+        rows: [
+          {
+            col1: "Forgets where they parked the car",
+            col2: "Forgets they drove a car at all",
+          },
+          {
+            col1: "Forgets where they put their keys",
+            col2: "Forgets what keys are used for",
+          },
+          {
+            col1: "Goes into a room and forgets why",
+            col2: "Forgets where they are (the room itself)",
+          },
+          {
+            col1: "Sometimes cannot find the right word",
+            col2: "Forgets the meaning of common words",
+          },
+          {
+            col1: "Mild slowdown in recall",
+            col2: "Memory loss disrupts daily functioning",
+          },
+        ],
+      },
+      {
+        type: "statTable",
+        heading: "Stages of Dementia Progression",
+        rows: [
+          {
+            label: "Stage 1: Preclinical",
+            value:
+              "Brain changes occur — NO visible symptoms yet. Can last years. Brain imaging may detect changes.",
+          },
+          {
+            label: "Stage 2: Mild Cognitive Impairment (MCI)",
+            value:
+              "Mild memory/thinking problems. Person can still function independently.",
+          },
+          {
+            label: "Stage 3: Mild Dementia (Early)",
+            value:
+              "Memory lapses noticeable. Gets lost, forgets names. Needs some help.",
+          },
+          {
+            label: "Stage 4: Moderate Dementia (Middle)",
+            value:
+              "Significant memory gaps. Cannot manage daily tasks alone. May wander.",
+          },
+          {
+            label: "Stage 5: Severe Dementia (Late)",
+            value:
+              "Fully dependent. May lose ability to speak, walk, swallow. 24-hour care needed.",
+          },
+        ],
+      },
+      {
+        type: "twoColumnList",
+        heading: "Risk Factors for Dementia",
+        columns: [
+          {
+            title: "Non-Modifiable (Cannot Change)",
+            items: [
+              "Age (>65 years, risk doubles every 5 years)",
+              "Family history of dementia",
+              "Genetics — APOE-e4 gene (risk gene)",
+              "Genetics — APP, PS-1, PS-2 (deterministic genes for early onset)",
+              "Previous serious head injury",
+            ],
+          },
+          {
+            title: "Modifiable (Can Be Reduced)",
+            items: [
+              "High blood pressure (hypertension)",
+              "Diabetes",
+              "High cholesterol",
+              "Heart disease / stroke",
+              "Physical inactivity / obesity",
+              "Smoking and excessive alcohol",
+              "Social isolation and low education",
+              "Depression (if untreated)",
+            ],
+          },
+        ],
+      },
+      {
+        type: "comparisonTable",
+        heading: "Cognitive Assessment Tools — Quick Reference",
+        columns: ["Tool", "Score / Time", "Cut-off", "Key Feature"],
+        rows: [
+          {
+            col1: "MMSE (Mini-Mental State Exam)",
+            col2: "0–30 / 5–10 min",
+            col3: "≤23 = cognitive impairment",
+            col4: "11 questions; tests orientation, registration, attention, recall, language. Most widely used.",
+          },
+          {
+            col1: "MoCA (Montreal Cognitive Assessment)",
+            col2: "0–30 / ~10 min",
+            col3: "<26 = abnormal",
+            col4: "Screens 6 domains: memory, language, attention, visuospatial, abstraction, orientation. Better at detecting MCI than MMSE.",
+          },
+          {
+            col1: "AD8 (8-Item Informant Interview)",
+            col2: "0–8 / ~3 min",
+            col3: "≥2 = cognitive impairment",
+            col4: "Informant-based (family/friend completes it). Tests memory, orientation, judgement, function. Culturally sensitive.",
+          },
+          {
+            col1: "GPCOG (GP Assessment of Cognition)",
+            col2: "2–5 min",
+            col3: "Requires further testing if score low",
+            col4: "Designed for GPs. Needs patient to write/draw. Screening tool only — not diagnostic.",
+          },
+          {
+            col1: "AMT (Abbreviated Mental Test)",
+            col2: "0–10 / 3–5 min",
+            col3: "<7 = probable impairment",
+            col4: "10 simple orientation questions. Used at TTSH and community hospitals in Singapore.",
+          },
+        ],
+      },
+      {
+        type: "examTip",
+        label: "EXAM TIP — Diagnosis",
+        text: "Diagnosis of dementia requires: (1) Thorough medical history, (2) Mental status and mood testing, (3) Physical and neurological examination, (4) Blood tests and brain imaging (CT/MRI) to rule out other causes. An HCA DOES NOT diagnose — they observe, report, and support under supervision.",
       },
     ],
   },
