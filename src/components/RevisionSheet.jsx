@@ -26,15 +26,31 @@ function ExamTipBlock({ section }) {
 
 function StatTableBlock({ section }) {
   return (
-    <div className="mb-1">
+    <div
+      className="mb-1 rounded-lg overflow-hidden"
+      style={{ border: "1px solid #BFDBFE" }}
+    >
       <table className="w-full border-collapse text-sm">
         <tbody>
           {section.rows.map((row, i) => (
-            <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-              <td className="border border-gray-200 px-3 py-2 font-semibold text-blue-700 w-2/5 align-top">
+            <tr
+              key={i}
+              style={{ backgroundColor: i % 2 === 0 ? "#EFF6FF" : "#ffffff" }}
+            >
+              <td
+                className="px-3 py-2 font-semibold w-2/5 align-top"
+                style={{
+                  color: "#1D4ED8",
+                  borderBottom: "1px solid #BFDBFE",
+                  borderRight: "1px solid #BFDBFE",
+                }}
+              >
                 {row.label}
               </td>
-              <td className="border border-gray-200 px-3 py-2 text-gray-700 align-top">
+              <td
+                className="px-3 py-2 align-top text-gray-700"
+                style={{ borderBottom: "1px solid #BFDBFE" }}
+              >
                 {row.value}
               </td>
             </tr>
@@ -67,14 +83,21 @@ function ComparisonTableBlock({ section }) {
   const colKeys = section.rows.length > 0 ? Object.keys(section.rows[0]) : [];
 
   return (
-    <div className="mb-1 overflow-x-auto">
+    <div
+      className="mb-1 overflow-x-auto rounded-lg overflow-hidden"
+      style={{ border: "1px solid #BFDBFE" }}
+    >
       <table className="w-full border-collapse text-sm">
         <thead>
-          <tr className="bg-blue-700 text-white">
+          <tr style={{ backgroundColor: "#1D4ED8" }}>
             {section.columns.map((col, i) => (
               <th
                 key={i}
-                className="border border-blue-600 px-3 py-2 text-left font-semibold"
+                className="px-3 py-2 text-left font-semibold text-white"
+                style={{
+                  borderBottom: "1px solid #1E40AF",
+                  borderRight: "1px solid #1E40AF",
+                }}
               >
                 {col}
               </th>
@@ -83,12 +106,21 @@ function ComparisonTableBlock({ section }) {
         </thead>
         <tbody>
           {section.rows.map((row, i) => (
-            <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+            <tr
+              key={i}
+              style={{ backgroundColor: i % 2 === 0 ? "#EFF6FF" : "#ffffff" }}
+            >
               {colKeys.map((key, j) => (
                 <td
                   key={j}
-                  className={`border border-gray-200 px-3 py-2 align-top text-sm
-                    ${j === 0 ? "font-semibold text-blue-700" : "text-gray-700"}`}
+                  className="px-3 py-2 align-top text-sm"
+                  style={{
+                    color: j === 0 ? "#1D4ED8" : "#374151",
+                    fontWeight: j === 0 ? "600" : "400",
+                    borderBottom: "1px solid #BFDBFE",
+                    borderRight:
+                      j < colKeys.length - 1 ? "1px solid #BFDBFE" : "none",
+                  }}
                 >
                   {row[key]}
                 </td>
