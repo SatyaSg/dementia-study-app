@@ -64,13 +64,21 @@ function StatTableBlock({ section }) {
 function BulletListBlock({ section }) {
   return (
     <div className="mb-1">
-      <ul className="space-y-1">
+      <ul className="space-y-2">
         {section.items.map((item, i) => (
           <li
             key={i}
-            className="text-gray-700 text-sm leading-relaxed flex items-start gap-2"
+            className="text-gray-700 text-sm leading-relaxed flex items-center gap-3"
           >
-            <span className="text-gray-400 mt-1 shrink-0">•</span>
+            <span
+              className="shrink-0 rounded-full flex-none"
+              style={{
+                width: "8px",
+                height: "8px",
+                backgroundColor: "#1D4ED8",
+                display: "inline-block",
+              }}
+            />
             <span>{item}</span>
           </li>
         ))}
@@ -145,13 +153,21 @@ function TwoColumnListBlock({ section }) {
             <p className="font-semibold text-blue-700 text-sm mb-2">
               {col.title}
             </p>
-            <ul className="space-y-1">
+            <ul className="space-y-2">
               {col.items.map((item, j) => (
                 <li
                   key={j}
-                  className="text-gray-700 text-sm flex items-start gap-2"
+                  className="text-gray-700 text-sm flex items-center gap-3"
                 >
-                  <span className="text-gray-400 mt-1 shrink-0">•</span>
+                  <span
+                    className="shrink-0 rounded-full flex-none"
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      backgroundColor: "#1D4ED8",
+                      display: "inline-block",
+                    }}
+                  />
                   <span>{item}</span>
                 </li>
               ))}
@@ -193,13 +209,21 @@ function SectionContent({ section }) {
     default:
       // Fallback for old-style sections with heading/content
       return Array.isArray(section.content) ? (
-        <ul className="space-y-1">
+        <ul className="space-y-2">
           {section.content.map((item, i) => (
             <li
               key={i}
-              className="text-gray-700 text-sm leading-relaxed flex items-start gap-2"
+              className="text-gray-700 text-sm leading-relaxed flex items-center gap-3"
             >
-              <span className="text-gray-400 mt-1">•</span>
+              <span
+                className="shrink-0 rounded-full flex-none"
+                style={{
+                  width: "8px",
+                  height: "8px",
+                  backgroundColor: "#1D4ED8",
+                  display: "inline-block",
+                }}
+              />
               <span>{item}</span>
             </li>
           ))}
