@@ -103,6 +103,36 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        {/* MCQ Practice Sets */}
+        <div className="mt-12">
+          <h2 className="text-xl font-bold text-gray-800 mb-6">
+            Test Your Knowledge
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="h-2" style={{ backgroundColor: "#92400E" }} />
+              <div className="p-5 flex flex-col flex-1">
+                <span className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#92400E" }}>
+                  5 Practice Sets · 10 Questions Each
+                </span>
+                <h3 className="font-bold text-gray-800 text-base leading-snug mb-2 flex-1">
+                  MCQ Practice Sets
+                </h3>
+                <p className="text-gray-500 text-xs mb-4">
+                  Mixed questions from all lectures to test your overall understanding.
+                </p>
+                <Link
+                  to="/practice"
+                  className="inline-block text-center px-4 py-2 text-sm font-semibold text-white rounded-lg transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: "#92400E" }}
+                >
+                  Start Practising
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <Footer />
