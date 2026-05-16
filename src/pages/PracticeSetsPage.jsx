@@ -8,35 +8,35 @@ const PRACTICE_SETS = [
     title: "Practice Set 1",
     description: "Mixed questions covering all lecture topics",
     colour: "#B45309",
-    questions: 10,
+    questions: 50,
   },
   {
     id: 2,
     title: "Practice Set 2",
     description: "Mixed questions covering all lecture topics",
     colour: "#065F46",
-    questions: 10,
+    questions: 50,
   },
   {
     id: 3,
     title: "Practice Set 3",
     description: "Mixed questions covering all lecture topics",
     colour: "#1E3A5F",
-    questions: 10,
+    questions: 50,
   },
   {
     id: 4,
     title: "Practice Set 4",
     description: "Mixed questions covering all lecture topics",
     colour: "#6B21A8",
-    questions: 10,
+    questions: 50,
   },
   {
     id: 5,
     title: "Practice Set 5",
     description: "Mixed questions covering all lecture topics",
     colour: "#9B1C1C",
-    questions: 10,
+    questions: 50,
   },
 ];
 
@@ -60,11 +60,10 @@ export default function PracticeSetsPage() {
 
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-10">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-gray-800">Choose a Practice Set</h2>
-          <Link
-            to="/"
-            className="text-sm text-blue-600 hover:underline"
-          >
+          <h2 className="text-xl font-bold text-gray-800">
+            Choose a Practice Set
+          </h2>
+          <Link to="/" className="text-sm text-blue-600 hover:underline">
             ← Back to Home
           </Link>
         </div>
