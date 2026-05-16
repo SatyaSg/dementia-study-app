@@ -3,175 +3,433 @@ export const lecture6 = {
   title: "Challenging Behaviours (BPSD)",
   colour: "#8B0000",
 
-  // ─── PART 1: REVISION ────────────────────────────────────────────────────────
   revision: {
     sections: [
       {
-        heading: "Core Principle",
-        content: [
-          "BPSD is NEVER the person's choice or character. It is always a communication of an unmet need, triggered by neurological, medical, environmental, or psychosocial factors. The HCA role is to identify the root cause, respond safely, and prevent escalation.",
+        type: "keyDefinition",
+        label: "CORE PRINCIPLE",
+        text: "BPSD is NEVER the person's choice or character. It is always a communication of an unmet need, triggered by neurological, medical, environmental, or psychosocial factors. The HCA role is to identify the root cause, respond safely, and prevent escalation.",
+      },
+      {
+        type: "comparisonTable",
+        heading: "1. What is BPSD? — Stage-by-Stage Overview",
+        columns: ["Stage", "Common BPSD / Challenging Behaviours"],
+        rows: [
+          {
+            col1: "Early Stage",
+            col2: "Memory loss. Development of obsessive-compulsive behaviours. Hoarding. Repetitive questioning. Anxiety about declining abilities.",
+          },
+          {
+            col1: "Middle Stage",
+            col2: "Most difficult stage. BPSD peak. Agitation, aggression, wandering, delusions, hallucinations, sundowning. Person's ability to reason or use logic has significantly declined.",
+          },
+          {
+            col1: "Late Stage",
+            col2: "Increased apathy and withdrawal. Fewer challenging behaviours. Requires more physical assistance with ADL. More passive and less able to communicate distress.",
+          },
         ],
       },
       {
-        heading: "1. What is BPSD? Definition and Scope",
-        content: [
-          "BPSD (Behavioural and Psychological Symptoms of Dementia) describes any behaviour by residents that is deemed dangerous to themselves, fellow residents, or staff (Andrews, 2006).",
-          "It includes a range of non-cognitive symptoms: agitation, aggression, hallucinations, delusions, wandering, depression, sleep disturbances, and more.",
-          "Affects 60–90% of people with dementia at some point during the disease course.",
-          "Some residents remain 'pleasantly confused' throughout without significant challenging behaviours.",
-          "Stages of dementia and common BPSD:",
-          "Early Stage — Memory loss, development of obsessive-compulsive behaviours, hoarding, repetitive questioning, anxiety about declining abilities.",
-          "Middle Stage — Most difficult stage; BPSD peak. Agitation, aggression, wandering, delusions, hallucinations, sundowning. Person's ability to reason or use logic has significantly declined.",
-          "Late Stage — Increased apathy and withdrawal; fewer challenging behaviours. Requires more physical assistance with ADL. More passive and less able to communicate distress.",
-        ],
+        type: "examTip",
+        label: "KEY EXAM FACT",
+        text: "BPSD affects 60–90% of people with dementia at some point during the disease course. Over 90% develop BPSD over a five-year period. Some residents remain 'pleasantly confused' throughout without significant challenging behaviours.",
       },
       {
+        type: "statTable",
         heading: "2. The Four Underlying Causes of BPSD",
-        content: [
-          "Neurological — Brain damage from dementia, neurotransmitter changes (reduced acetylcholine, glutamate dysregulation). Structural brain changes trigger BPSD directly.",
-          "Medical / Physical — Pain (undiagnosed arthritis, pressure sores), constipation, polypharmacy, infections (UTI, URTI, pneumonia), dehydration, hypoglycaemia, vitamin B12/folate deficiency, hypothyroidism, fatigue.",
-          "Environmental — Excessive noise, poor or glaring lighting, room temperature (too hot/cold), cluttered space, mirrors (may not recognise reflection), unfamiliar surroundings, shadows causing misperceptions.",
-          "Psychosocial — Loneliness, loss of control, boredom, lack of stimulation, fear, perceived threat, trauma history (PTSD, POW experiences), unresolved grief, cultural isolation.",
-          "KEY EXAM FACT: Before labelling any behaviour as BPSD, the HCA must first RULE OUT PHYSIOLOGICAL CAUSES — especially delirium, UTI, pain, and medication changes. Sudden behaviour change = rule out delirium first.",
+        rows: [
+          {
+            label: "Neurological",
+            value:
+              "Brain damage from dementia, neurotransmitter changes (reduced acetylcholine, glutamate dysregulation). Structural brain changes trigger BPSD directly.",
+          },
+          {
+            label: "Medical / Physical",
+            value:
+              "Pain (undiagnosed arthritis, pressure sores), constipation, polypharmacy (too many medications), infections (UTI, URTI, pneumonia), dehydration, hypoglycaemia, vitamin B12/folate deficiency, hypothyroidism, fatigue.",
+          },
+          {
+            label: "Environmental",
+            value:
+              "Excessive noise, poor or glaring lighting, room temperature (too hot/cold), cluttered space, mirrors (may not recognise reflection), unfamiliar surroundings, shadows causing misperceptions.",
+          },
+          {
+            label: "Psychosocial",
+            value:
+              "Loneliness, loss of control, boredom, lack of stimulation, fear, perceived threat, trauma history (PTSD, POW experiences), unresolved grief, cultural isolation.",
+          },
         ],
       },
       {
+        type: "examTip",
+        label: "KEY EXAM FACT",
+        text: "Before labelling any behaviour as BPSD, the HCA must first RULE OUT PHYSIOLOGICAL CAUSES — especially delirium, UTI, pain, and medication changes. Sudden behaviour change = rule out delirium first.",
+      },
+      {
+        type: "statTable",
         heading: "3. BPSD Symptoms — Behavioural and Psychological",
-        content: [
-          "Agitation — Restlessness, pacing, verbal outbursts, fidgeting, pulling at clothes. Most common BPSD. Often triggered when control is taken from the person.",
-          "Aggression — Hitting, biting, scratching, hair-pulling, shouting vulgarities, making threats. Verbal AND physical. Always a response to something — not random.",
-          "Hallucinations — Sensory experiences that cannot be verified: seeing people or insects that are not there, hearing voices. Visual hallucinations most common. Always assess for delirium.",
-          "Delusions — False, fixed beliefs not correctable by evidence (e.g. staff are stealing, food is poisoned, family members are impostors). Cannot be argued away.",
-          "Paranoia — Suspiciousness, jealousy, unfounded accusations. Very real to the person. Do not argue — validate and redirect.",
-          "Wandering — Walking aimlessly, trying to leave the facility, going to others' rooms. Driven by boredom, unmet physical needs, fear, or trying to fulfil a remembered responsibility.",
-          "Sundowning — Worsening of confusion, agitation, and restlessness in late afternoon/evening. Caused by circadian rhythm changes and exhaustion from the day.",
-          "Sleep disturbances — Insomnia, day-night reversal. Contributes to daytime agitation and caregiver burnout.",
-          "Apathy — Disinterest in surroundings and activities. Common in late stage. Often mistaken for contentment.",
-          "Depression — Sadness, hopelessness, withdrawal, appetite changes, sleep disturbances. Requires clinical assessment and reporting.",
-          "Repetitive behaviours — Repeating words, questions, or actions. Driven by anxiety, boredom, or fear. Not deliberate — memory failure.",
-          "Hoarding — Collecting and hiding objects. Often driven by fear of loss of control or past experiences of scarcity.",
-          "Shadowing — Following and mimicking the carer constantly. Driven by fear, loneliness, or need for reassurance.",
-          "Sexual disinhibition — Culturally inappropriate behaviours caused by frontal lobe disinhibition. Not the person's character — a neurological symptom.",
+        rows: [
+          {
+            label: "Agitation",
+            value:
+              "Restlessness, pacing, verbal outbursts, fidgeting, pulling at clothes. Most common BPSD. Often triggered when control is taken from the person.",
+          },
+          {
+            label: "Aggression",
+            value:
+              "Hitting, biting, scratching, hair-pulling, shouting vulgarities, making threats. Verbal AND physical. Always a response to something — not random.",
+          },
+          {
+            label: "Hallucinations",
+            value:
+              "Sensory experiences that cannot be verified: seeing people or insects that are not there, hearing voices. Visual hallucinations most common. Always assess for delirium.",
+          },
+          {
+            label: "Delusions",
+            value:
+              "False, fixed beliefs not correctable by evidence (e.g. staff are stealing, food is poisoned, family members are impostors). Cannot be argued away.",
+          },
+          {
+            label: "Paranoia",
+            value:
+              "Suspiciousness, jealousy, unfounded accusations. Very real to the person. Do not argue — validate and redirect.",
+          },
+          {
+            label: "Wandering",
+            value:
+              "Walking aimlessly, trying to leave the facility, going to others' rooms. Driven by boredom, unmet physical needs, fear, or trying to fulfil a remembered responsibility.",
+          },
+          {
+            label: "Sundowning",
+            value:
+              "Worsening of confusion, agitation, and restlessness in late afternoon/evening. Caused by circadian rhythm changes and exhaustion from the day.",
+          },
+          {
+            label: "Sleep disturbances",
+            value:
+              "Insomnia, day-night reversal. Contributes to daytime agitation and caregiver burnout.",
+          },
+          {
+            label: "Apathy",
+            value:
+              "Disinterest in surroundings and activities. Common in late stage. Often mistaken for contentment.",
+          },
+          {
+            label: "Depression",
+            value:
+              "Sadness, hopelessness, withdrawal, appetite changes, sleep disturbances. Requires clinical assessment and reporting.",
+          },
+          {
+            label: "Repetitive behaviours",
+            value:
+              "Repeating words, questions, or actions. Driven by anxiety, boredom, or fear. Not deliberate — memory failure.",
+          },
+          {
+            label: "Hoarding",
+            value:
+              "Collecting and hiding objects. Often driven by fear of loss of control or past experiences of scarcity.",
+          },
+          {
+            label: "Shadowing",
+            value:
+              "Following and mimicking the carer constantly. Driven by fear, loneliness, or need for reassurance.",
+          },
+          {
+            label: "Sexual disinhibition",
+            value:
+              "Culturally inappropriate behaviours caused by frontal lobe disinhibition. Not the person's character — a neurological symptom.",
+          },
         ],
       },
       {
+        type: "statTable",
         heading: "4. The ABC Framework of Behaviour Management",
-        content: [
-          "The ABC Framework is the most important tool in Lecture 6. Every BPSD episode should be understood through A-B-C. It is also used for documentation and care planning.",
-          "A = Activating Event (Antecedent) — WHEN and WHERE did the behaviour occur? What was the person doing BEFORE the behaviour? What was happening in the environment (noise, clutter, lighting, temperature, mirrors, recent changes)? Also check PHYSICAL factors (pain, UTI, pneumonia, dehydration, constipation, fatigue, medication changes, hypoglycaemia) and PSYCHOLOGICAL factors (history of psychiatric illness, recent loss, past trauma, hallucinations).",
-          "B = Behaviour — Describe the SPECIFIC behaviour observed: physical aggression (hitting, biting), verbal aggression (shouting, cursing), wandering, hoarding, shadowing, sexual disinhibition, repetitive behaviour, screaming, sleep disturbance. Be objective and specific — not 'was difficult' but 'punched the HCA on the left arm three times while being helped to dress.'",
-          "C = Consequence — What happened AFTER the behaviour? Was the person told off, ignored, restrained, sedated, guided back? The consequence is critical — it determines whether the behaviour is reinforced or extinguished. People with dementia are extremely sensitive to nonverbal cues and MIRROR the emotional state of those around them.",
-          "CRITICAL: If the consequence of BPSD is managed poorly (e.g. the person is scolded, physically restrained, or ignored), it becomes a NEW activating event — and the cycle escalates. The consequence IS the intervention.",
+        rows: [
+          {
+            label: "A = Activating Event (Antecedent)",
+            value:
+              "WHEN and WHERE did the behaviour occur? What was the person doing BEFORE the behaviour? Check: environmental factors (noise, clutter, lighting, temperature, mirrors, recent changes), PHYSICAL factors (pain, UTI, pneumonia, dehydration, constipation, fatigue, medication changes, hypoglycaemia), and PSYCHOLOGICAL factors (history of psychiatric illness, recent loss, past trauma, hallucinations).",
+          },
+          {
+            label: "B = Behaviour",
+            value:
+              "Describe the SPECIFIC behaviour observed. Be objective and specific — not 'was difficult' but 'punched the HCA on the left arm three times while being helped to dress.' Covers: physical aggression (hitting, biting), verbal aggression (shouting, cursing), wandering, hoarding, shadowing, sexual disinhibition, repetitive behaviour, screaming, sleep disturbance.",
+          },
+          {
+            label: "C = Consequence",
+            value:
+              "What happened AFTER the behaviour? Was the person told off, ignored, restrained, sedated, guided back? The consequence is critical — it determines whether the behaviour is reinforced or extinguished. People with dementia mirror the emotional state of those around them. A poorly managed consequence becomes a NEW activating event and escalates the cycle.",
+          },
         ],
       },
       {
+        type: "examTip",
+        label: "CRITICAL",
+        text: "If the consequence of BPSD is managed poorly (e.g. the person is scolded, physically restrained, or ignored), it becomes a NEW activating event — and the cycle escalates. The consequence IS the intervention. The attitude and manner of care staff is the main factor.",
+      },
+      {
+        type: "statTable",
         heading: "5. Identifying Triggers — The Four Trigger Categories",
-        content: [
-          "Physical triggers — Pain, hunger, thirst, fatigue, need to toilet, constipation, infection, medication side effects.",
-          "Emotional triggers — Fear, anxiety, confusion, grief, loss of control, feeling abandoned or threatened.",
-          "Environmental triggers — Loud noise, crowding, shadows, poor lighting, room temperature, mirrors, unfamiliar faces, recent changes.",
-          "Social triggers — Isolation, lack of autonomy, boredom, perceived disrespect, loss of dignity.",
+        rows: [
+          {
+            label: "Physical triggers",
+            value:
+              "Pain, hunger, thirst, fatigue, need to toilet, constipation, infection, medication side effects.",
+          },
+          {
+            label: "Emotional triggers",
+            value:
+              "Fear, anxiety, confusion, grief, loss of control, feeling abandoned or threatened.",
+          },
+          {
+            label: "Environmental triggers",
+            value:
+              "Loud noise, crowding, shadows, poor lighting, room temperature, mirrors, unfamiliar faces, recent changes.",
+          },
+          {
+            label: "Social triggers",
+            value:
+              "Isolation, lack of autonomy, boredom, perceived disrespect, loss of dignity.",
+          },
         ],
       },
       {
+        type: "statTable",
         heading: "6. Restlessness — Root Causes and Management (PAINAD Scale)",
-        content: [
-          "Restlessness may present as: pacing, fidgeting, repetitive movements, attempting to leave, verbal agitation. It is ALWAYS a communication of an unmet need.",
-          "Pain / Physical Discomfort — Signs: grimacing, moaning, guarding body part, pulling at clothes. Management: PAINAD pain assessment, offer toileting, ensure comfortable clothing, check for pressure sores or infection, report to nurse.",
-          "Need to Toilet — Signs: pulling at pants, heading to door, agitation. Management: scheduled toileting every 2 hours, observe non-verbal cues, ensure toilet is clearly signposted and accessible.",
-          "Hunger or Thirst — Signs: constant movement, irritability, looking in cupboards. Management: offer small snack or drink, use visual cues (see-through drink bottle), encourage regular hydration.",
-          "Boredom / No Stimulation — Signs: pacing, fiddling with objects, shadowing staff. Management: provide purposeful activity (sorting, folding, simple chores), offer music or photo albums.",
-          "Overstimulation — Signs: covering ears, yelling, moving away from others. Management: move to a quiet space, reduce TV/radio, use soft lighting and calm voice, one-on-one interaction.",
-          "Sundowning — Signs: confusion, pacing, agitation in late afternoon/evening. Management: reduce stimulation by late afternoon, close curtains before sunset, soothing routine (tea, soft music, soft lighting), limit naps and caffeine.",
+        rows: [
+          {
+            label: "Pain / Physical Discomfort",
+            value:
+              "Signs: grimacing, moaning, guarding body part, pulling at clothes. Management: PAINAD pain assessment, offer toileting, ensure comfortable clothing, check for pressure sores or infection, report to nurse.",
+          },
+          {
+            label: "Need to Toilet",
+            value:
+              "Signs: pulling at pants, heading to door, agitation. Management: scheduled toileting every 2 hours, observe non-verbal cues, ensure toilet is clearly signposted and accessible.",
+          },
+          {
+            label: "Hunger or Thirst",
+            value:
+              "Signs: constant movement, irritability, looking in cupboards. Management: offer small snack or drink, use visual cues (see-through drink bottle), encourage regular hydration.",
+          },
+          {
+            label: "Boredom / No Stimulation",
+            value:
+              "Signs: pacing, fiddling with objects, shadowing staff. Management: provide purposeful activity (sorting, folding, simple chores), offer music or photo albums.",
+          },
+          {
+            label: "Overstimulation",
+            value:
+              "Signs: covering ears, yelling, moving away from others. Management: move to a quiet space, reduce TV/radio, use soft lighting and calm voice, one-on-one interaction.",
+          },
+          {
+            label: "Sundowning",
+            value:
+              "Signs: confusion, pacing, agitation in late afternoon/evening. Management: reduce stimulation by late afternoon, close curtains before sunset, soothing routine (tea, soft music, soft lighting), limit naps and caffeine.",
+          },
         ],
       },
       {
+        type: "statTable",
         heading: "7. Immediate Response to BPSD Outbursts — Six Principles",
-        content: [
-          "1. Stay Calm — Use a soft, slow, non-threatening voice. Your emotional state mirrors onto the person. Calm is contagious. Frustration and fear are also contagious.",
-          "2. Assess Safety — Remove dangerous objects from reach. Position yourself near an exit if the person is physically aggressive. Never put yourself between the person and the wall.",
-          "3. Non-Confrontational — Do not argue, correct, or demand compliance. Never respond to anger with anger. Avoid asserting authority — this escalates catastrophic reactions.",
-          "4. Redirect Attention — Offer an alternative activity or topic. Use the person's interests (biography). Distract with a snack, music, or familiar object. Meaningful redirection is better than mere distraction.",
-          "5. Allow Space — Do not crowd or physically restrain. Aggressive people need more interpersonal space because of heightened perception and vigilance. Give them room.",
-          "6. Observe Non-Verbal Cues — Watch their body language and facial expressions. Are they in pain? Frightened? Confused? This tells you the ROOT CAUSE of the behaviour.",
+        rows: [
+          {
+            label: "1. Stay Calm",
+            value:
+              "Use a soft, slow, non-threatening voice. Your emotional state mirrors onto the person. Calm is contagious. Frustration and fear are also contagious.",
+          },
+          {
+            label: "2. Assess Safety",
+            value:
+              "Remove dangerous objects from reach. Position yourself near an exit if the person is physically aggressive. Never put yourself between the person and the wall.",
+          },
+          {
+            label: "3. Non-Confrontational",
+            value:
+              "Do not argue, correct, or demand compliance. Never respond to anger with anger. Avoid asserting authority — this escalates catastrophic reactions.",
+          },
+          {
+            label: "4. Redirect Attention",
+            value:
+              "Offer an alternative activity or topic. Use the person's interests (biography). Distract with a snack, music, or familiar object. Meaningful redirection is better than mere distraction.",
+          },
+          {
+            label: "5. Allow Space",
+            value:
+              "Do not crowd or physically restrain. Aggressive people need more interpersonal space because of heightened perception and vigilance. Give them room.",
+          },
+          {
+            label: "6. Observe Non-Verbal Cues",
+            value:
+              "Watch their body language and facial expressions. Are they in pain? Frightened? Confused? This tells you the ROOT CAUSE of the behaviour.",
+          },
         ],
       },
       {
+        type: "statTable",
         heading:
-          "8. Catastrophic Reactions — Definition, Causes, Prevention, Management",
-        content: [
-          "A catastrophic reaction is an emotional outburst — sometimes with physical acting-out behaviour — that seems inappropriate or out of proportion to the situation. (Santo Pietro & Ostuni, 1997)",
-          "Why it occurs:",
-          "Cognitive overload — The brain with dementia has reduced capacity to handle multiple inputs, complex decisions, or difficult tasks. Overloading causes panic or aggression.",
-          "Power struggle — When the carer tries to force compliance, the resident and carer both feel frustrated. Physical violence nearly always occurs if someone initiates physical contact during a catastrophic reaction.",
-          "Carer-triggered — Carers can unwittingly precipitate catastrophic reactions through lack of understanding, poor communication, or asserting authority inappropriately.",
-          "What to AVOID (Prevention): presenting tasks that are too difficult; overwhelming with too many decisions (e.g. 3 clothing options = brain overload); recalling distressing memories; making sudden or unnecessary changes to environment or staffing; applying physical restraint; arguing or asserting authority.",
-          "THE 5 Rs OF CATASTROPHIC REACTION MANAGEMENT:",
-          "REMAIN CALM — keep your body relaxed and open, arms down, hands visible.",
+          "8. Catastrophic Reactions — Causes, Prevention and Management",
+        rows: [
+          {
+            label: "Definition",
+            value:
+              "An emotional outburst — sometimes with physical acting-out behaviour — that seems inappropriate or out of proportion to the situation. (Santo Pietro & Ostuni, 1997)",
+          },
+          {
+            label: "Cause: Cognitive overload",
+            value:
+              "The brain with dementia has reduced capacity to handle multiple inputs, complex decisions, or difficult tasks. Overloading causes panic or aggression.",
+          },
+          {
+            label: "Cause: Power struggle",
+            value:
+              "When the carer tries to force compliance, the resident and carer both feel frustrated. Physical violence nearly always occurs if someone initiates physical contact during a catastrophic reaction.",
+          },
+          {
+            label: "Cause: Carer-triggered",
+            value:
+              "Carers can unwittingly precipitate catastrophic reactions through lack of understanding, poor communication, or asserting authority inappropriately.",
+          },
+          {
+            label: "AVOID (Prevention)",
+            value:
+              "Presenting tasks that are too difficult. Overwhelming with too many decisions (e.g. 3 clothing options = brain overload). Recalling distressing memories. Making sudden or unnecessary changes to environment or staffing. Applying physical restraint. Arguing or asserting authority.",
+          },
+        ],
+      },
+      {
+        type: "bulletList",
+        heading: "The 5 Rs of Catastrophic Reaction Management",
+        items: [
+          "REMAIN CALM — keep your body relaxed and open, arms down, hands visible",
           "RESPOND TO FEELINGS — 'Tom, you look really upset. Can I help?'",
           "REASSURE — 'I am here to help you. Everything is okay.'",
-          "REMOVE YOURSELF (if safe) — step back, give space and time to calm down.",
-          "RETURN LATER — when the person has calmed, gently re-engage.",
-          "Use clear staff signals (hand signals) to call for backup if needed without escalating.",
+          "REMOVE YOURSELF (if safe) — step back, give space and time to calm down",
+          "RETURN LATER — when the person has calmed, gently re-engage",
+          "Use clear staff signals (hand signals) to call for backup if needed without escalating",
         ],
       },
       {
+        type: "statTable",
         heading: "9. Managing Aggression — Prevention and Response",
-        content: [
-          "Aggressive behaviour is either verbal (swearing, screaming, shouting vulgarities, threats) or physical (hitting, pinching, scratching, hair-pulling, biting).",
-          "PREVENTION:",
-          "Avoid situations producing anxiety, fear, frustration, or disorientation.",
-          "Always prepare the person: explain what is going to happen before it happens.",
-          "Use encouragement, praise, and affection rather than criticism or frustration.",
-          "Approach agitated residents with two staff members if known to be aggressive.",
-          "Give a face-washer or other object to hold during personal care.",
-          "During personal care of an aggressive person — provide care from the SIDE, not the front.",
-          "When walking with an aggressive person — walk with the person between you and the wall (never trap yourself).",
-          "RESPONSE DURING AGGRESSION:",
-          "If the person is not causing harm to themselves or others — leave them alone first.",
-          "Stay out of reach. Ensure the person cannot do real damage to anything or anyone.",
-          "Allow ample interpersonal space — aggressive people need more personal space.",
-          "Avoid making the situation worse by shouting, abusing, or touching the person.",
-          "React in a calm voice with reassuring words. Give the person time to settle down.",
-          "NEVER punish after the event — the person will not remember and punishment has no therapeutic effect.",
-          "After an aggressive incident — DEBRIEF staff involved. This is essential for staff wellbeing.",
+        rows: [
+          {
+            label: "Prevent: Prepare the person",
+            value:
+              "Always explain what is going to happen before it happens. Avoid situations producing anxiety, fear, frustration, or disorientation.",
+          },
+          {
+            label: "Prevent: Approach and staffing",
+            value:
+              "Approach agitated residents with two staff members if known to be aggressive. During personal care — provide care from the SIDE, not the front. When walking — walk with the person between you and the wall (never trap yourself).",
+          },
+          {
+            label: "Prevent: Tone and interaction",
+            value:
+              "Use encouragement, praise, and affection rather than criticism or frustration. Give a face-washer or other object to hold during personal care.",
+          },
+          {
+            label: "Response: Give space first",
+            value:
+              "If the person is not causing harm to themselves or others — leave them alone first. Stay out of reach. Allow ample interpersonal space.",
+          },
+          {
+            label: "Response: De-escalate",
+            value:
+              "React in a calm voice with reassuring words. Avoid making the situation worse by shouting, abusing, or touching the person. Give the person time to settle down.",
+          },
+          {
+            label: "Response: After the incident",
+            value:
+              "NEVER punish after the event — the person will not remember and punishment has no therapeutic effect. DEBRIEF staff involved. This is essential for staff wellbeing.",
+          },
         ],
       },
       {
+        type: "statTable",
         heading: "10. Hallucinations, Delusions, and Paranoia — Management",
-        content: [
-          "Hallucinations — Seeing/hearing things that cannot be verified. Visual hallucinations most common. ALWAYS assess for delirium first. Management: reassure and stay calm, ensure good lighting (shadows/glare cause misperceptions), do NOT argue that what they see is not real, report to nurse, distract with familiar activity.",
-          "Delusions — False, fixed beliefs not correctable by evidence (e.g. theft accusation, food poisoned, family are impostors). Management: do NOT argue or try to disprove; let person keep small amount of money to check easily; help look for lost item then redirect; keep environment unchanged; gently say what is real then redirect to walk or activity.",
-          "Paranoia — Unfounded suspicion, jealousy, accusatory beliefs. Very real and frightening to the person. Management: do not argue or take it personally; validate the feeling ('That must feel upsetting'); reassure and redirect to comforting activity; do not confront or present evidence.",
+        rows: [
+          {
+            label: "Hallucinations",
+            value:
+              "Definition: seeing/hearing things that cannot be verified. Visual hallucinations most common. ALWAYS assess for delirium first. Management: reassure and stay calm, ensure good lighting (shadows/glare cause misperceptions), do NOT argue that what they see is not real, report to nurse, distract with familiar activity.",
+          },
+          {
+            label: "Delusions",
+            value:
+              "Definition: false, fixed beliefs not correctable by evidence (e.g. theft accusation, food poisoned, family are impostors). Management: do NOT argue or try to disprove; let person keep small amount of money to check easily; help look for lost item then redirect; keep environment unchanged; gently redirect to walk or activity.",
+          },
+          {
+            label: "Paranoia",
+            value:
+              "Definition: unfounded suspicion, jealousy, accusatory beliefs. Very real and frightening to the person. Management: do not argue or take it personally; validate the feeling ('That must feel upsetting'); reassure and redirect to comforting activity; do not confront or present evidence.",
+          },
         ],
       },
       {
+        type: "statTable",
         heading:
           "11. Environmental Strategies — Wayfinding and Therapeutic Design",
-        content: [
-          "Wayfinding (the ability to navigate and find one's way) is impaired in dementia and causes anxiety, distress, and decreased social interaction.",
-          "Visual cues and signage — Pictograms/photos at key decision points (toilet door, bedroom door, dining room). Colourful, personally meaningful cues. Signs mounted at lower eye level (4–5 feet from floor) as residents often look downward.",
-          "Lighting — Bright but not glaring. Natural light where possible. Nightlights in hallways, bedroom, bathroom. Close curtains before sunset to reduce shadows. Avoid high contrast shadows.",
-          "Reduce clutter and noise — Clear hallways and walkways, reduce furniture obstacles, turn off TV/radio during meals and care activities, one conversation at a time.",
-          "Safe wandering spaces — Circular or looped corridors allow wandering without reaching exits. Secured gardens provide safe outdoor space. Visible destinations reduce anxiety from feeling trapped.",
-          "Familiar objects and personalised spaces — Personal photos, familiar objects, and meaningful items near the resident room door help them identify their space. These also provide emotional security and identity.",
-          "Temperature and comfort — Ensure comfortable room temperature. Overheating or cold are common unrecognised triggers for agitation.",
-          "Mirrors — May cause distress; the person may not recognise their own reflection and feel threatened by a 'stranger.' Consider covering mirrors in the room of a resident who is distressed by them.",
-          "Cultural and lifestyle acceptance — The environment should accept the resident's cultural and lifestyle habits. Prayer spaces, culturally appropriate decor, and familiar cultural items reduce psychosocial triggers.",
+        rows: [
+          {
+            label: "Visual cues and signage",
+            value:
+              "Pictograms/photos at key decision points (toilet door, bedroom door, dining room). Colourful, personally meaningful cues. Signs mounted at lower eye level (4–5 feet from floor) as residents with dementia often look downward.",
+          },
+          {
+            label: "Lighting",
+            value:
+              "Bright but not glaring. Natural light where possible. Nightlights in hallways, bedroom, bathroom. Close curtains before sunset to reduce shadows (which cause misperceptions/hallucinations). Avoid high contrast shadows.",
+          },
+          {
+            label: "Reduce clutter and noise",
+            value:
+              "Clear hallways and walkways. Reduce furniture obstacles. Turn off TV/radio during meals and care activities. One conversation at a time.",
+          },
+          {
+            label: "Safe wandering spaces",
+            value:
+              "Circular or looped corridors allow wandering without reaching exits. Secured gardens provide safe outdoor space. Visible destinations reduce anxiety from feeling trapped.",
+          },
+          {
+            label: "Familiar objects and personalised spaces",
+            value:
+              "Personal photos, familiar objects, and meaningful items near the resident room door help them identify their space. These also provide emotional security and identity.",
+          },
+          {
+            label: "Temperature and comfort",
+            value:
+              "Ensure comfortable room temperature. Overheating or cold are common unrecognised triggers for agitation.",
+          },
+          {
+            label: "Mirrors",
+            value:
+              "May cause distress — the person may not recognise their own reflection and feel threatened by a 'stranger.' Consider covering mirrors in the room of a resident who is distressed by them.",
+          },
+          {
+            label: "Cultural and lifestyle acceptance",
+            value:
+              "The environment should accept the resident's cultural and lifestyle habits. Prayer spaces, culturally appropriate decor, and familiar cultural items reduce psychosocial triggers.",
+          },
         ],
       },
       {
+        type: "bulletList",
         heading: "12. Preventing Worsening of BPSD — Key Strategies",
-        content: [
-          "Maintain a predictable daily routine — same wake, meal, activity, and sleep times.",
-          "Provide personalised activities matched to biography (music, puzzles, sensory stimulation).",
-          "Optimise the environment (reduce clutter, enhance lighting, use visual cues).",
-          "Offer comforting familiar items (photo album, blanket, stuffed animal, familiar music).",
-          "Promote social inclusion and dignity — NEVER exclude, infantilise, or ignore.",
-          "Avoid known triggers (staff with poor rapport, overstimulating environments, rushed care).",
-          "Document BPSD patterns using ABC charting to identify consistent triggers and effective responses.",
-          "HCA KEY TAKEAWAYS: Always ASSESS before reacting. Look for PATTERNS and timing. Use gentle VALIDATION — never argue. Provide MEANINGFUL redirection, not just distraction. DOCUMENT to inform care planning.",
+        items: [
+          "Maintain a predictable daily routine — same wake, meal, activity, and sleep times",
+          "Provide personalised activities matched to biography (music, puzzles, sensory stimulation)",
+          "Optimise the environment (reduce clutter, enhance lighting, use visual cues)",
+          "Offer comforting familiar items (photo album, blanket, stuffed animal, familiar music)",
+          "Promote social inclusion and dignity — NEVER exclude, infantilise, or ignore",
+          "Avoid known triggers (staff with poor rapport, overstimulating environments, rushed care)",
+          "Document BPSD patterns using ABC charting to identify consistent triggers and effective responses",
         ],
+      },
+      {
+        type: "examTip",
+        label: "HCA KEY TAKEAWAYS",
+        text: "Always ASSESS before reacting. Look for PATTERNS and timing. Use gentle VALIDATION — never argue. Provide MEANINGFUL redirection, not just distraction. DOCUMENT to inform care planning.",
       },
     ],
   },
@@ -350,7 +608,7 @@ export const lecture6 = {
         "Which of the following should an HCA do when a resident with dementia is physically aggressive during personal care?",
       options: [
         "A. Restrain the resident's arms to protect both parties and complete the care quickly",
-        "B. Approach from the SIDE rather than the front during personal care of an aggressive resident, maintain ample personal space, and use a calm reassuring voice",
+        "B. Approach from the SIDE rather than the front, maintain ample personal space, and use a calm reassuring voice",
         "C. Raise your voice to assert authority and calm the situation",
         "D. Step between the aggressive resident and the wall to prevent escape",
       ],
@@ -381,7 +639,7 @@ export const lecture6 = {
       ],
       answer: "B",
       explanation:
-        "Wayfinding is the ability to find one's way in the world — knowing one's position in space and reaching desired destinations. In Alzheimer's disease, wayfinding is impaired because of memory and spatial orientation deficits. Poor wayfinding in care facilities causes anxiety, distress, and BPSD. Visual cues, pictograms, and distinctive room features help compensate.",
+        "Wayfinding is the ability to find one's way in the world — knowing one's position in space and reaching desired destinations. In Alzheimer's disease, wayfinding is impaired because of memory and spatial orientation deficits. Poor wayfinding in care facilities (long identical hallways, no visual landmarks) causes anxiety, distress, and BPSD. Visual cues, pictograms, and distinctive room features help compensate.",
     },
     {
       question:
@@ -713,7 +971,7 @@ export const lecture6 = {
       ],
       answer: "B",
       rationale:
-        "This is exactly the purpose of ABC charting: identifying patterns to enable proactive prevention. The pattern is clear: 3pm + TV + group gathering = aggression. The effective C (quiet room redirect) provides the solution. The care plan intervention: proactively move the resident to a quiet area before 3pm. This converts a reactive management (responding to aggression) into a proactive prevention (avoiding the trigger). This is the highest quality BPSD management.",
+        "This is exactly the purpose of ABC charting: identifying patterns to enable proactive prevention. The pattern is clear: 3pm + TV + group gathering = aggression. The effective C (quiet room redirect) provides the solution. The care plan intervention: proactively move the resident to a quiet area before 3pm. This converts reactive management (responding to aggression) into proactive prevention (avoiding the trigger). This is the highest quality BPSD management.",
     },
     {
       scenario:
@@ -734,61 +992,61 @@ export const lecture6 = {
   goldenRules: [
     {
       number: 1,
-      title: "BPSD Is Always a Communication, Never a Choice",
+      title: "Golden Rule 1: BPSD Is Always a Communication, Never a Choice",
       detail:
         "No person with dementia chooses to have BPSD. Every episode communicates an unmet need or distress. The HCA task is to decode the message, not react to the behaviour. Behaviour displayed is a result of the DISEASE, not the person.",
     },
     {
       number: 2,
-      title: "Rule Out Physiological Causes First",
+      title: "Golden Rule 2: Rule Out Physiological Causes First",
       detail:
         "Before ANY BPSD intervention, rule out: pain (use PAINAD), UTI (sudden confusion + strong-smelling urine = report immediately), delirium (sudden acute behaviour change), constipation, dehydration, medication changes. SUDDEN behaviour change = DELIRIUM until proven otherwise.",
     },
     {
       number: 3,
-      title: "Use the ABC Framework for Every Episode",
+      title: "Golden Rule 3: Use the ABC Framework for Every Episode",
       detail:
         "A = What triggered it? (Environment, physical, psychological). B = What exactly happened? (Objective, specific description). C = What happened after? (Did your response escalate or de-escalate?). Document using ABC to identify patterns. Patterns enable prevention.",
     },
     {
       number: 4,
-      title: "The Consequence Is the Intervention",
+      title: "Golden Rule 4: The Consequence Is the Intervention",
       detail:
         "How you respond TO the BPSD becomes the new A (activating event). Respond poorly (anger, punishment, restraint) = cycle escalates. Respond well (calm, validate, redirect) = cycle breaks. Your attitude and manner are the most powerful clinical tools you have.",
     },
     {
       number: 5,
-      title: "The 5 Rs for Catastrophic Reactions",
+      title: "Golden Rule 5: The 5 Rs for Catastrophic Reactions",
       detail:
         "Remain calm. Respond to feelings. Reassure the person. Remove yourself. Return later. NEVER: physically restrain during a catastrophic reaction (violence almost always results), overwhelm with decisions, argue, or assert authority. Prevention is always better than cure.",
     },
     {
       number: 6,
-      title: "Aggression: Give Space, Approach from the Side",
+      title: "Golden Rule 6: Aggression — Give Space, Approach from the Side",
       detail:
         "For known aggressive residents: approach personal care from the SIDE (not front). Walk with the person between you and the WALL (not between them and the wall). Allow ample personal space. Never restrain. Never shout. Debrief staff after incidents.",
     },
     {
       number: 7,
-      title: "Never Argue with Delusions or Paranoia",
+      title: "Golden Rule 7: Never Argue with Delusions or Paranoia",
       detail:
         "False beliefs cannot be corrected with evidence in a brain with dementia. Arguing ALWAYS escalates. Validate the emotion, help look for the lost item, let the person keep accessible cash, gently redirect. What they experience is real to them — respond to that reality with empathy.",
     },
     {
       number: 8,
-      title: "Environment Is Medicine",
+      title: "Golden Rule 8: Environment Is Medicine",
       detail:
         "Poor lighting causes visual hallucinations (shadows, glare). Noise causes overstimulation. Clutter causes confusion and falls. Mirrors cause paranoia (unrecognised reflection). Good wayfinding (visual cues, pictograms, distinctive room features) reduces anxiety and BPSD. The environment can be modified without medication.",
     },
     {
       number: 9,
-      title: "Sundowning Strategy: Prevent, Not Just Respond",
+      title: "Golden Rule 9: Sundowning Strategy — Prevent, Not Just Respond",
       detail:
         "Reduce stimulation by late afternoon. Close curtains before sunset. Soothing routine: warm drink, soft music, soft lighting. Limit daytime naps and afternoon caffeine. Encourage activity during daytime. PREDICT the timing from ABC patterns and proactively intervene before it peaks.",
     },
     {
       number: 10,
-      title: "Document, Assess, Adapt",
+      title: "Golden Rule 10: Document, Assess, Adapt",
       detail:
         "Every BPSD episode should be documented objectively in ABC format. Look for patterns in timing, triggers, and effective responses. Share with the care team at handover. Use this data to PREVENT recurrence by modifying the care plan. Documentation is not administrative work — it is clinical care.",
     },
