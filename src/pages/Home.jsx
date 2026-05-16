@@ -113,14 +113,18 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col">
               <div className="h-2" style={{ backgroundColor: "#92400E" }} />
               <div className="p-5 flex flex-col flex-1">
-                <span className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#92400E" }}>
-                  5 Practice Sets · 10 Questions Each
+                <span
+                  className="text-xs font-semibold uppercase tracking-wide mb-1"
+                  style={{ color: "#92400E" }}
+                >
+                  5 Practice Sets · 50 Questions Each
                 </span>
                 <h3 className="font-bold text-gray-800 text-base leading-snug mb-2 flex-1">
                   MCQ Practice Sets
                 </h3>
                 <p className="text-gray-500 text-xs mb-4">
-                  Mixed questions from all lectures to test your overall understanding.
+                  Mixed questions from all lectures to test your overall
+                  understanding.
                 </p>
                 <Link
                   to="/practice"
