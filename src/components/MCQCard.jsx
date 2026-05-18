@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import { useAuth } from '../context/AuthContext'
+import LoginPrompt from './LoginPrompt'
+
+const FREE_LIMIT = 10
 
 const LETTERS = ['A', 'B', 'C', 'D']
 
@@ -53,6 +57,9 @@ export default function MCQCard({ items, level }) {
   const [score, setScore] = useState(0)
   const [answers, setAnswers] = useState({})
   const [key, setKey] = useState(0)
+  const { user, sessionExpired } = useAuth()
+
+  const isLocked = sessionExpired || (!user && current >= FREE_LIMIT)
 
   function handleAnswer(isCorrect, index) {
     if (answers[index] !== undefined) return
@@ -90,16 +97,20 @@ export default function MCQCard({ items, level }) {
         </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-4">
-        <SingleMCQ
-          key={`${key}-${current}`}
-          item={items[current]}
-          onAnswer={(correct) => handleAnswer(correct, current)}
-          answered={answers[current] !== undefined}
-        />
-      </div>
+      {isLocked ? (
+        <LoginPrompt total={items.length} sessionExpired={sessionExpired} />
+      ) : (
+        <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-4">
+          <SingleMCQ
+            key={`${key}-${current}`}
+            item={items[current]}
+            onAnswer={(correct) => handleAnswer(correct, current)}
+            answered={answers[current] !== undefined}
+          />
+        </div>
+      )}
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mt-4">
         <button
           onClick={() => setCurrent(c => c - 1)}
           disabled={current === 0}
@@ -117,7 +128,7 @@ export default function MCQCard({ items, level }) {
 
         <button
           onClick={() => setCurrent(c => c + 1)}
-          disabled={current === items.length - 1}
+          disabled={current === items.length - 1 || isLocked}
           className="px-4 py-2 bg-gray-100 text-gray-700 text-sm rounded-lg disabled:opacity-40 hover:bg-gray-200 transition-colors"
         >
           Next →

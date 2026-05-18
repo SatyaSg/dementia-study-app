@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 export default function Navbar() {
+  const { user, signInWithGoogle, signOut } = useAuth();
+
+  async function handleSignIn() {
+    try {
+      await signInWithGoogle();
+    } catch (err) {
+      if (err.code !== "auth/popup-closed-by-user") console.error(err);
+    }
+  }
+
   return (
     <nav className="bg-[#0f172a] sticky top-0 z-50 w-full overflow-hidden">
       {/* Announcement bar */}
@@ -57,13 +68,37 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Right badge */}
-        <span className="text-[10px] font-semibold uppercase tracking-wider bg-[#134e4a] text-[#5eead4] border border-[#0f766e] rounded-md px-2.5 py-1 hidden sm:inline-block">
-          Healthcare — Certificate
-        </span>
-        <span className="text-[10px] font-semibold uppercase tracking-wider bg-[#134e4a] text-[#5eead4] border border-[#0f766e] rounded-md px-2.5 py-1 sm:hidden">
-          Basic
-        </span>
+        {/* Auth controls */}
+        <div className="flex items-center gap-2.5">
+          {user === undefined ? null : user ? (
+            <>
+              {user.photoURL && (
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName}
+                  referrerPolicy="no-referrer"
+                  className="w-7 h-7 rounded-full border border-[#0f766e] shrink-0"
+                />
+              )}
+              <span className="text-[#94a3b8] text-xs hidden sm:block max-w-[120px] truncate">
+                {user.displayName}
+              </span>
+              <button
+                onClick={signOut}
+                className="text-[11px] font-medium text-[#5eead4] border border-[#0f766e] bg-[#134e4a] hover:bg-[#0f766e] rounded-md px-3 py-1 transition-colors"
+              >
+                Sign out
+              </button>
+            </>
+          ) : (
+            <button
+              onClick={handleSignIn}
+              className="text-[11px] font-semibold text-[#5eead4] border border-[#0f766e] bg-[#134e4a] hover:bg-[#0f766e] rounded-md px-3 py-1.5 transition-colors"
+            >
+              Sign in
+            </button>
+          )}
+        </div>
       </div>
     </nav>
   );

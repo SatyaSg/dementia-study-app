@@ -1,5 +1,8 @@
 import { useState } from 'react'
+import { useAuth } from '../context/AuthContext'
+import LoginPrompt from './LoginPrompt'
 
+const FREE_LIMIT = 10
 const LETTERS = ['A', 'B', 'C', 'D']
 
 function SingleCase({ item }) {
@@ -51,6 +54,9 @@ function SingleCase({ item }) {
 export default function CaseCard({ items }) {
   const [current, setCurrent] = useState(0)
   const [key, setKey] = useState(0)
+  const { user, sessionExpired } = useAuth()
+
+  const isLocked = sessionExpired || (!user && current >= FREE_LIMIT)
 
   function reset() {
     setCurrent(0)
@@ -66,11 +72,15 @@ export default function CaseCard({ items }) {
         </span>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-4">
-        <SingleCase key={`${key}-${current}`} item={items[current]} />
-      </div>
+      {isLocked ? (
+        <LoginPrompt total={items.length} sessionExpired={sessionExpired} />
+      ) : (
+        <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-4">
+          <SingleCase key={`${key}-${current}`} item={items[current]} />
+        </div>
+      )}
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mt-4">
         <button
           onClick={() => setCurrent(c => c - 1)}
           disabled={current === 0}
@@ -88,7 +98,7 @@ export default function CaseCard({ items }) {
 
         <button
           onClick={() => setCurrent(c => c + 1)}
-          disabled={current === items.length - 1}
+          disabled={current === items.length - 1 || isLocked}
           className="px-4 py-2 bg-gray-100 text-gray-700 text-sm rounded-lg disabled:opacity-40 hover:bg-gray-200 transition-colors"
         >
           Next →
