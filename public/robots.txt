@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dementia.d1cvyshcg59v0i.amplifyapp.com/sitemap.xml

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Practice Sets Overview -->
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/practice</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual Practice Sets -->
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/practice/1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/practice/2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/practice/3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/practice/4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/practice/5</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Individual Lecture Pages -->
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/5</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/8</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/9</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dementia.d1cvyshcg59v0i.amplifyapp.com/lecture/10</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
