@@ -1,15 +1,13 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import {
   onAuthStateChanged,
-  signInWithRedirect,
-  getRedirectResult,
+  signInWithPopup,
   signOut as firebaseSignOut,
 } from "firebase/auth";
 import { auth, googleProvider } from "../firebase";
 
 const AuthContext = createContext(null);
 
-// 5 minutes for testing — change to 60 * 60 * 1000 for 1 hour in production
 const SESSION_TIMEOUT = 60 * 60 * 1000;
 
 export function AuthProvider({ children }) {
@@ -30,10 +28,6 @@ export function AuthProvider({ children }) {
       }
     });
     return unsubscribe;
-  }, []);
-
-  useEffect(() => {
-    getRedirectResult(auth).catch((err) => console.error(err));
   }, []);
 
   useEffect(() => {
@@ -59,7 +53,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   function signInWithGoogle() {
-    return signInWithRedirect(auth, googleProvider);
+    return signInWithPopup(auth, googleProvider);
   }
 
   function signOut() {

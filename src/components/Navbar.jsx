@@ -8,7 +8,7 @@ export default function Navbar() {
     try {
       await signInWithGoogle();
     } catch (err) {
-      console.error(err);
+      if (err.code !== "auth/popup-closed-by-user") console.error(err);
     }
   }
 
