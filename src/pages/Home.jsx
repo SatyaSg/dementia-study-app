@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -57,6 +58,10 @@ const LECTURES = [
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 overflow-x-hidden">
+      <Helmet>
+        <title>Dementia Care (Basic) | Certificate in Healthcare</title>
+        <meta name="description" content="Study dementia care with revision sheets, MCQs, clinical cases, and golden rules — covering 10 lectures and 5 practice sets." />
+      </Helmet>
       <Navbar />
 
       {/* Hero */}

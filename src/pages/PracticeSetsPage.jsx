@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -43,6 +44,10 @@ const PRACTICE_SETS = [
 export default function PracticeSetsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Helmet>
+        <title>MCQ Practice Sets | Dementia Care (Basic)</title>
+        <meta name="description" content="Test your dementia care knowledge with 5 practice sets of 50 mixed MCQs drawn from all lecture topics." />
+      </Helmet>
       <Navbar />
 
       <header className="bg-gray-900 text-white py-12 px-4 text-center">

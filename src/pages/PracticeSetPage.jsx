@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MCQCard from "../components/MCQCard";
@@ -63,6 +64,10 @@ export default function PracticeSetPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Helmet>
+        <title>{data.title} | Dementia Care (Basic)</title>
+        <meta name="description" content={`${data.title} — 50 mixed MCQs from all dementia care lecture topics. Part of the Certificate in Healthcare.`} />
+      </Helmet>
       <Navbar />
 
       <header

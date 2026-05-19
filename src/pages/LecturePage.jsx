@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -71,6 +72,10 @@ export default function LecturePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Helmet>
+        <title>{meta.title} | Dementia Care (Basic)</title>
+        <meta name="description" content={`Study ${meta.title} — revision sheets, Q&A, MCQs, clinical cases, and golden rules for the Dementia Care (Basic) certificate.`} />
+      </Helmet>
       <Navbar />
 
       {/* Lecture header */}
