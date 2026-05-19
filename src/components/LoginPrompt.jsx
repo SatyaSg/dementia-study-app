@@ -17,9 +17,7 @@ export default function LoginPrompt({ total, sessionExpired }) {
     try {
       await signInWithGoogle()
     } catch (err) {
-      if (err.code !== 'auth/popup-closed-by-user') {
-        console.error(err)
-      }
+      console.error(err)
     }
   }
 

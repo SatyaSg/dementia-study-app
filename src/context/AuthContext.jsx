@@ -1,7 +1,8 @@
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import {
   onAuthStateChanged,
-  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   signOut as firebaseSignOut,
 } from "firebase/auth";
 import { auth, googleProvider } from "../firebase";
@@ -32,6 +33,10 @@ export function AuthProvider({ children }) {
   }, []);
 
   useEffect(() => {
+    getRedirectResult(auth).catch((err) => console.error(err));
+  }, []);
+
+  useEffect(() => {
     const events = ["mousedown", "keydown", "touchstart", "scroll"];
     events.forEach((e) =>
       window.addEventListener(e, resetActivity, { passive: true }),
@@ -54,7 +59,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   function signInWithGoogle() {
-    return signInWithPopup(auth, googleProvider);
+    return signInWithRedirect(auth, googleProvider);
   }
 
   function signOut() {
